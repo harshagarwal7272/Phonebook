@@ -1,0 +1,9 @@
+extends layout
+
+block content
+	h1= title
+	form(method='POST',action='/users/search')
+		.form-group
+			label Name
+			input.form-control(name='name',type='text')
+		input.btn(name='submit',type='submit',value='submit')

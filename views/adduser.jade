@@ -1,0 +1,12 @@
+extends layout
+
+block content
+	h1= title
+	form(method='post',action='/users/adduser',enctype='url-encoded')
+		.form-group
+			label Name
+			input.form-control(name='name',type='text')
+		.form-group
+			label Number
+			input.form-control(name='number',type='text')
+		input.btn(name='submit',type='submit',value='Save')

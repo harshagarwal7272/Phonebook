@@ -1,0 +1,5 @@
+extends layout
+
+block content
+	p Contact Number : #{user.number}
+	p Tata :p Bhago ab :v	
